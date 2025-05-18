@@ -71,7 +71,7 @@ inventory-service/
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/your-org/inventory-service.git
+git clone https://github.com/masoudsadeghiDev/inventory-service.git
 cd inventory-service
 ```
 
@@ -91,12 +91,6 @@ spring:
 
 ```bash
 ./mvnw spring-boot:run
-```
-
-Or with Gradle:
-
-```bash
-./gradlew bootRun
 ```
 
 ---
