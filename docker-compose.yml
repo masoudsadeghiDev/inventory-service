@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:12-alpine
+    container_name: shedlock_postgres
+    environment:
+      POSTGRES_DB: inventorydb
+      POSTGRES_USER: inventory_user
+      POSTGRES_PASSWORD: inventory_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - shedlock_net
+
+volumes:
+  postgres_data:
+
+networks:
+  shedlock_net:
